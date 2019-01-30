@@ -14,8 +14,8 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = ">= 2.3.8"
 
-  spec.add_dependency "rubocop", "~> 0.62.0"
-  spec.add_dependency "rubocop-rspec", "~> 1.32"
-  spec.add_development_dependency "bundler", "~> 1.17"
-  spec.add_development_dependency "rake", "~> 12.3"
+  gem.add_dependency "rubocop", "~> 0.62.0"
+  gem.add_dependency "rubocop-rspec", "~> 1.32"
+  gem.add_development_dependency "bundler", "~> 1.17"
+  gem.add_development_dependency "rake", "~> 12.3"
 end
