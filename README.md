@@ -1,21 +1,11 @@
 # Ruby Style Guide
 
-This repository contains a template you can use to seed a repository for a
-new open source project.
-
-See go/releasing (available externally at
-https://opensource.google.com/docs/releasing/) for more information about
-releasing a new Google open source project.
-
-This template uses the Apache license, as is Google's default.  See the
-documentation for instructions on using alternate license.
-
 ## Installation
 
 Run:
 
 ```bash
-bundle add rspec --group development,test
+bundle add google-style --group development,test
 ```
 
 Or, add this line to your Gemfile:
