@@ -1,4 +1,4 @@
-# Google-Style-Ruby
+# Ruby Style Guide
 
 This repository contains a template you can use to seed a repository for a
 new open source project.
