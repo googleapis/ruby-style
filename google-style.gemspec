@@ -25,7 +25,7 @@ Gem::Specification.new do |gem|
 
   gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE"]
 
-  gem.required_ruby_version = ">= 2.3.8"
+  gem.required_ruby_version = ">= 2.2.0"
 
   gem.add_dependency "rubocop", "~> 0.62.0"
   gem.add_dependency "rubocop-rspec", "~> 1.32"
