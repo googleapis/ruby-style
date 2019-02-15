@@ -4,6 +4,11 @@
 
 See the main [Google Ruby Style Guide README](google-style/README.md).
 
+## The google-style-rspec Gem
+
+See the main [Google Ruby RSpec Style Guide
+README](google-style-rspec/README.md).
+
 ## Contributing
 
 Contributions to this library are always welcome and highly encouraged.
