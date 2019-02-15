@@ -13,13 +13,13 @@
 # limitations under the License.
 
 Gem::Specification.new do |gem|
-  gem.name          = "google-style"
+  gem.name          = "google-style-rspec"
   gem.version       = "0.1.0"
 
   gem.authors       = ["Graham Paye"]
   gem.email         = ["paye@google.com"]
-  gem.description   = "Shared style guide for Google's ruby projects"
-  gem.summary       = "Collection of rubocop rules"
+  gem.description   = "Shared RSpec style guide for Google's ruby projects"
+  gem.summary       = "Collection of RSpec rubocop rules"
   gem.homepage      = "https://github.com/googleapis/ruby-style/tree/master/"
   gem.license       = "Apache-2.0"
 
@@ -27,7 +27,8 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = ">= 2.2.0"
 
-  gem.add_dependency "rubocop", "~> 0.64.0"
+  gem.add_dependency "google-style", "~> 0.1"
+  gem.add_dependency "rubocop-rspec", "~> 1.32"
   gem.add_development_dependency "bundler", "~> 1.17"
   gem.add_development_dependency "rake", "~> 12.3"
 end
