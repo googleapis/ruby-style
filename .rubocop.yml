@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EmptyLines: # for the extra line between copyright and code
