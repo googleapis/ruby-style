@@ -22,8 +22,7 @@ Add the following to the top of your `.rubocop.yml`:
 
 ```yaml
 inherit_gem:
-  google-style:
-    - rubocop.yml
+  google-style: google-style.yml
 ```
 
 And run:
