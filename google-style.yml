@@ -1,0 +1,52 @@
+# Copyright 2019 Google LLC
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+
+#     https://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+AllCops:
+  TargetRubyVersion: 2.2
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Layout/EmptyLines: # for the extra line between copyright and code
+  Enabled: false
+Metrics/AbcSize:
+  Max: 30
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 25
+Metrics/ParameterLists:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Max: 10
+Naming/VariableNumber:
+  Enabled: false
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  EnforcedStyle: omit_parentheses
+  AllowParenthesesInMultilineCall: true
+  AllowParenthesesInCamelCaseMethod: true
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Style/RescueModifier:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/TrivialAccessors:
+  Enabled: false

@@ -23,7 +23,8 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/googleapis/ruby-style/tree/master/"
   gem.license       = "Apache-2.0"
 
-  gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE"]
+  gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE",
+                       "README.md", "google-style.yml"]
 
   gem.required_ruby_version = ">= 2.2.0"
 
