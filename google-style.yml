@@ -13,15 +13,13 @@
 # limitations under the License.
 
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.3
 Layout/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EmptyLines: # for the extra line between copyright and code
-  Enabled: false
-Layout/IndentHeredoc:
   Enabled: false
 Metrics/AbcSize:
   Max: 30
