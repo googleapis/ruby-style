@@ -21,6 +21,8 @@ Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EmptyLines: # for the extra line between copyright and code
   Enabled: false
+Layout/IndentHeredoc:
+  Enabled: false
 Metrics/AbcSize:
   Max: 30
 Metrics/ClassLength:
@@ -31,6 +33,8 @@ Metrics/LineLength:
   Max: 120
 Metrics/MethodLength:
   Max: 25
+Metrics/ModuleLength:
+  Enabled: false
 Metrics/ParameterLists:
   Enabled: false
 Metrics/PerceivedComplexity:
