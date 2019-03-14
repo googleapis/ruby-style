@@ -13,7 +13,7 @@
 # limitations under the License.
 
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.3
 Layout/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
@@ -23,8 +23,6 @@ Layout/EmptyLines: # for the extra line between copyright and code
   Enabled: false
 Metrics/AbcSize:
   Max: 30
-Metrics/ClassLength:
-  Enabled: false
 Metrics/CyclomaticComplexity:
   Max: 10
 Metrics/LineLength:
@@ -36,6 +34,8 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Max: 10
 Naming/VariableNumber:
+  Enabled: false
+Style/FrozenStringLiteralComment:
   Enabled: false
 Style/MethodCallWithArgsParentheses:
   Enabled: true
