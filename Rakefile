@@ -36,7 +36,7 @@ task :release, :tag do |_t, args|
     sh "bundle exec rake build"
   end
 
-  path_to_be_pushed = "pkg/#{version}.gem"
+  path_to_be_pushed = "pkg/google-style-#{version}.gem"
   raise "Cannot build google-style for version #{version}" unless File.file? path_to_be_pushed
   begin
     ::Gems.push File.new(path_to_be_pushed)
