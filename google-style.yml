@@ -53,5 +53,9 @@ Style/RescueModifier:
   Enabled: false
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+Style/SymbolArray:
+  EnforcedStyle: brackets
 Style/TrivialAccessors:
   Enabled: false
+Style/WordArray:
+  EnforcedStyle: brackets
