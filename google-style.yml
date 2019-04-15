@@ -35,8 +35,6 @@ Metrics/PerceivedComplexity:
   Max: 10
 Naming/VariableNumber:
   Enabled: false
-Style/BlockDelimiters:
-  EnforcedStyle: braces_for_chaining
 Style/EmptyMethod:
   EnforcedStyle: expanded
 Style/FrozenStringLiteralComment:
