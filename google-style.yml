@@ -35,6 +35,8 @@ Metrics/PerceivedComplexity:
   Max: 10
 Naming/VariableNumber:
   Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: expanded
 Style/FrozenStringLiteralComment:
   Enabled: false
 Style/MethodCallWithArgsParentheses:
@@ -42,11 +44,16 @@ Style/MethodCallWithArgsParentheses:
   EnforcedStyle: omit_parentheses
   AllowParenthesesInMultilineCall: true
   AllowParenthesesInCamelCaseMethod: true
+  AllowParenthesesInChaining: true
 Style/MethodDefParentheses:
   EnforcedStyle: require_no_parentheses
 Style/RescueModifier:
   Enabled: false
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+Style/SymbolArray:
+  EnforcedStyle: brackets
 Style/TrivialAccessors:
   Enabled: false
+Style/WordArray:
+  EnforcedStyle: brackets
