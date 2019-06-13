@@ -1,5 +1,9 @@
 # Release History
 
+### 0.3.1 / 2019-06-12
+
+* Fix file permissions
+
 ### 0.3.0 / 2019-05-06
 
 * Enforce expanded for Style/EmptyMethod
