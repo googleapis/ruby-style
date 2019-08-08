@@ -12,7 +12,7 @@ Or, add this line to your Gemfile:
 
 ```ruby
 group :test, :development do
-  gem "google-style"
+  gem "google-style", "~> 1.24.0"
 end
 ```
 
@@ -30,6 +30,16 @@ And run:
 ```bash
 bundle exec rubocop
 ```
+
+## Versioning
+
+For all `1.x.x` gem versions:
+
+- The target and required Ruby version will match the minor gem version. `1.24.0` targets Ruby 2.4. When `1.25.0` is released, it will target Ruby 2.5, and `1.30.0` will target Ruby 3.0.
+
+- During a minor version bump, the rubocop dependency will be updated to the latest version.
+
+- For these reasons, it is highly recommended that dependencies specify at least a specific minor version of this gem.
 
 ## Contributing
 
