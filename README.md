@@ -12,7 +12,7 @@ Or, add this line to your Gemfile:
 
 ```ruby
 group :test, :development do
-  gem "google-style", "~> 1.24.0"
+  gem "google-style"
 end
 ```
 
