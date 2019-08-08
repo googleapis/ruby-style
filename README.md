@@ -51,11 +51,12 @@ This library is licensed under Apache 2.0. Full license text is available in
 
 ## Supported Ruby Versions
 
-These libraries are currently supported on Ruby 2.3+.
+These libraries are currently supported on Ruby 2.4+.
 
 Google provides official support for Ruby versions that are actively supported
 by Ruby Core—that is, Ruby versions that are either in normal maintenance or
-in security maintenance, and not end of life. Currently, this means Ruby 2.3
-and later. Older versions of Ruby _may_ still work, but are unsupported and not
-recommended. See https://www.ruby-lang.org/en/downloads/branches/ for details
-about the Ruby support schedule.
+in security maintenance, and not end of life. Currently, this means Ruby 2.4
+and later. Starting with Ruby 2.4, minor releases of the google-style gem under
+`1.x.x` will correspond with the required Ruby version, with `1.24.x` requiring
+Ruby 2.4.
+See https://www.ruby-lang.org/en/downloads/branches/ for details about the Ruby support schedule.
