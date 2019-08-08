@@ -14,7 +14,7 @@
 
 Gem::Specification.new do |gem|
   gem.name          = "google-style"
-  gem.version       = "0.3.1"
+  gem.version       = "1.24.0"
 
   gem.authors       = ["Graham Paye"]
   gem.email         = ["paye@google.com"]
@@ -26,9 +26,9 @@ Gem::Specification.new do |gem|
   gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE",
                        "README.md", "google-style.yml"]
 
-  gem.required_ruby_version = ">= 2.3.0"
+  gem.required_ruby_version = ">= 2.4.0"
 
-  gem.add_dependency "rubocop", "~> 0.64.0"
-  gem.add_development_dependency "bundler", "~> 1.17"
+  gem.add_dependency "rubocop", "~> 0.74.0"
+  gem.add_development_dependency "bundler", "~> 2.0"
   gem.add_development_dependency "rake", "~> 12.3"
 end
