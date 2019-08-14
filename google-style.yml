@@ -47,6 +47,8 @@ Style/MethodCallWithArgsParentheses:
   AllowParenthesesInChaining: true
 Style/MethodDefParentheses:
   EnforcedStyle: require_no_parentheses
+Style/NumericLiterals:
+  Enabled: false
 Style/RescueModifier:
   Enabled: false
 Style/StringLiterals:
