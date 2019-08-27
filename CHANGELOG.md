@@ -1,5 +1,10 @@
 # Release History
 
+### 1.24.0 / 2019-08-08
+
+* Set required ruby version to 2.4
+* Set rubocop dependency to ~> 0.74.0
+
 ### 0.3.1 / 2019-06-12
 
 * Fix file permissions
