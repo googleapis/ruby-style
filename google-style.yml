@@ -25,7 +25,7 @@ Metrics/AbcSize:
   Max: 30
 Metrics/CyclomaticComplexity:
   Max: 10
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
   Max: 25
