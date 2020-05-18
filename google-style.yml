@@ -21,12 +21,12 @@ Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EmptyLines: # for the extra line between copyright and code
   Enabled: false
+Layout/LineLength:
+  Max: 120
 Metrics/AbcSize:
   Max: 30
 Metrics/CyclomaticComplexity:
   Max: 10
-Layout/LineLength:
-  Max: 120
 Metrics/MethodLength:
   Max: 25
 Metrics/ParameterLists:
