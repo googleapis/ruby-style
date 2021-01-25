@@ -13,47 +13,93 @@
 # limitations under the License.
 
 AllCops:
+  SuggestExtensions: false
   TargetRubyVersion: 2.4
-Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
-Layout/EmptyLineAfterGuardClause:
+
+Layout/EmptyLineAfterGuardClause: 
   Enabled: false
 Layout/EmptyLines: # for the extra line between copyright and code
   Enabled: false
-Metrics/AbcSize:
-  Max: 30
-Metrics/CyclomaticComplexity:
-  Max: 10
-Metrics/LineLength:
+Layout/HashAlignment: 
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+Layout/LineLength: 
   Max: 120
-Metrics/MethodLength:
-  Max: 25
-Metrics/ParameterLists:
-  Enabled: false
-Metrics/PerceivedComplexity:
-  Max: 10
-Naming/VariableNumber:
-  Enabled: false
-Style/EmptyMethod:
-  EnforcedStyle: expanded
-Style/FrozenStringLiteralComment:
-  Enabled: false
-Style/MethodCallWithArgsParentheses:
+Layout/SpaceBeforeBrackets: 
   Enabled: true
-  EnforcedStyle: omit_parentheses
-  AllowParenthesesInMultilineCall: true
+Lint/AmbiguousAssignment: 
+  Enabled: true
+Lint/DeprecatedConstants: 
+  Enabled: true
+Lint/DuplicateBranch: 
+  Enabled: true
+Lint/DuplicateRegexpCharacterClassElement: 
+  Enabled: true
+Lint/EmptyBlock: 
+  Enabled: true
+Lint/EmptyClass: 
+  Enabled: true
+Lint/LambdaWithoutLiteralBlock: 
+  Enabled: true
+Lint/NoReturnInBeginEndBlocks: 
+  Enabled: true
+Lint/RedundantDirGlobSort: 
+  Enabled: true
+Lint/ToEnumArguments: 
+  Enabled: true
+Lint/UnexpectedBlockArity: 
+  Enabled: true
+Lint/UnmodifiedReduceAccumulator: 
+  Enabled: true
+Metrics/AbcSize: 
+  Max: 30
+Metrics/CyclomaticComplexity: 
+  Max: 10
+Metrics/MethodLength: 
+  Max: 25
+Metrics/ParameterLists: 
+  Enabled: false
+Metrics/PerceivedComplexity: 
+  Max: 10
+Naming/VariableNumber: 
+  Enabled: false
+Style/ArgumentsForwarding: 
+  Enabled: true
+Style/CollectionCompact: 
+  Enabled: true
+Style/DocumentDynamicEvalDefinition: 
+  Enabled: true
+Style/EmptyMethod: 
+  EnforcedStyle: expanded
+Style/EndlessMethod: 
+  Enabled: true
+Style/FrozenStringLiteralComment: 
+  Enabled: false
+Style/HashExcept: 
+  Enabled: true
+Style/MethodCallWithArgsParentheses: 
   AllowParenthesesInCamelCaseMethod: true
   AllowParenthesesInChaining: true
-Style/MethodDefParentheses:
+  AllowParenthesesInMultilineCall: true
+  Enabled: true
+  EnforcedStyle: omit_parentheses
+Style/MethodDefParentheses: 
   EnforcedStyle: require_no_parentheses
-Style/RescueModifier:
+Style/NegatedIfElseCondition: 
+  Enabled: true
+Style/NilLambda: 
+  Enabled: true
+Style/RedundantArgument: 
+  Enabled: true
+Style/RescueModifier: 
   Enabled: false
-Style/StringLiterals:
+Style/StringLiterals: 
   EnforcedStyle: double_quotes
-Style/SymbolArray:
+Style/SwapValues: 
+  Enabled: true
+Style/SymbolArray: 
   EnforcedStyle: brackets
-Style/TrivialAccessors:
+Style/TrivialAccessors: 
   Enabled: false
-Style/WordArray:
+Style/WordArray: 
   EnforcedStyle: brackets
