@@ -13,93 +13,93 @@
 # limitations under the License.
 
 AllCops:
-  SuggestExtensions: false
+  SuggestExtensions: true
   TargetRubyVersion: 2.4
 
-Layout/EmptyLineAfterGuardClause: 
+Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EmptyLines: # for the extra line between copyright and code
   Enabled: false
-Layout/HashAlignment: 
+Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
-Layout/LineLength: 
+Layout/LineLength:
   Max: 120
-Layout/SpaceBeforeBrackets: 
+Layout/SpaceBeforeBrackets:
   Enabled: true
-Lint/AmbiguousAssignment: 
+Lint/AmbiguousAssignment:
   Enabled: true
-Lint/DeprecatedConstants: 
+Lint/DeprecatedConstants:
   Enabled: true
-Lint/DuplicateBranch: 
+Lint/DuplicateBranch:
   Enabled: true
-Lint/DuplicateRegexpCharacterClassElement: 
+Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
-Lint/EmptyBlock: 
+Lint/EmptyBlock:
   Enabled: true
-Lint/EmptyClass: 
+Lint/EmptyClass:
   Enabled: true
-Lint/LambdaWithoutLiteralBlock: 
+Lint/LambdaWithoutLiteralBlock:
   Enabled: true
-Lint/NoReturnInBeginEndBlocks: 
+Lint/NoReturnInBeginEndBlocks:
   Enabled: true
-Lint/RedundantDirGlobSort: 
+Lint/RedundantDirGlobSort:
   Enabled: true
-Lint/ToEnumArguments: 
+Lint/ToEnumArguments:
   Enabled: true
-Lint/UnexpectedBlockArity: 
+Lint/UnexpectedBlockArity:
   Enabled: true
-Lint/UnmodifiedReduceAccumulator: 
+Lint/UnmodifiedReduceAccumulator:
   Enabled: true
-Metrics/AbcSize: 
+Metrics/AbcSize:
   Max: 30
-Metrics/CyclomaticComplexity: 
+Metrics/CyclomaticComplexity:
   Max: 10
-Metrics/MethodLength: 
+Metrics/MethodLength:
   Max: 25
-Metrics/ParameterLists: 
+Metrics/ParameterLists:
   Enabled: false
-Metrics/PerceivedComplexity: 
+Metrics/PerceivedComplexity:
   Max: 10
-Naming/VariableNumber: 
+Naming/VariableNumber:
   Enabled: false
-Style/ArgumentsForwarding: 
+Style/ArgumentsForwarding:
   Enabled: true
-Style/CollectionCompact: 
+Style/CollectionCompact:
   Enabled: true
-Style/DocumentDynamicEvalDefinition: 
+Style/DocumentDynamicEvalDefinition:
   Enabled: true
-Style/EmptyMethod: 
+Style/EmptyMethod:
   EnforcedStyle: expanded
-Style/EndlessMethod: 
+Style/EndlessMethod:
   Enabled: true
-Style/FrozenStringLiteralComment: 
+Style/FrozenStringLiteralComment:
   Enabled: false
-Style/HashExcept: 
+Style/HashExcept:
   Enabled: true
-Style/MethodCallWithArgsParentheses: 
+Style/MethodCallWithArgsParentheses:
   AllowParenthesesInCamelCaseMethod: true
   AllowParenthesesInChaining: true
   AllowParenthesesInMultilineCall: true
   Enabled: true
   EnforcedStyle: omit_parentheses
-Style/MethodDefParentheses: 
+Style/MethodDefParentheses:
   EnforcedStyle: require_no_parentheses
-Style/NegatedIfElseCondition: 
+Style/NegatedIfElseCondition:
   Enabled: true
-Style/NilLambda: 
+Style/NilLambda:
   Enabled: true
-Style/RedundantArgument: 
+Style/RedundantArgument:
   Enabled: true
-Style/RescueModifier: 
+Style/RescueModifier:
   Enabled: false
-Style/StringLiterals: 
+Style/StringLiterals:
   EnforcedStyle: double_quotes
-Style/SwapValues: 
+Style/SwapValues:
   Enabled: true
-Style/SymbolArray: 
+Style/SymbolArray:
   EnforcedStyle: brackets
-Style/TrivialAccessors: 
+Style/TrivialAccessors:
   Enabled: false
-Style/WordArray: 
+Style/WordArray:
   EnforcedStyle: brackets
