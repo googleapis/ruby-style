@@ -26,9 +26,9 @@ Gem::Specification.new do |gem|
   gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE",
                        "README.md", "google-style.yml"]
 
-  gem.required_ruby_version = ">= 2.4.0"
+  gem.required_ruby_version = ">= 2.5.0"
 
-  gem.add_dependency "rubocop", "~> 0.74.0"
+  gem.add_dependency "rubocop", "~> 1.8"
   gem.add_development_dependency "bundler", "~> 2.0"
   gem.add_development_dependency "rake", "~> 12.3"
 end
