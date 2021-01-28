@@ -1,5 +1,10 @@
 # Release History
 
+### 1.25.0 / 2021-01-27
+
+* chore: add CODEOWNERS (#24)
+* bump rubocop version to latest, set min ruby to 2.5, enable new cops (#27)
+
 ### 1.24.0 / 2019-08-08
 
 * Set required ruby version to 2.4
