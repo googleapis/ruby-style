@@ -2,8 +2,7 @@
 
 ### 1.25.0 / 2021-01-27
 
-* chore: add CODEOWNERS (#24)
-* bump rubocop version to latest, set min ruby to 2.5, enable new cops (#27)
+* pin rubocop version to 1.x, set min ruby to 2.5, enable new cops
 
 ### 1.24.0 / 2019-08-08
 
