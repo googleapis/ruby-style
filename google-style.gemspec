@@ -14,7 +14,7 @@
 
 Gem::Specification.new do |gem|
   gem.name          = "google-style"
-  gem.version       = "1.25.0"
+  gem.version       = "1.25.1"
 
   gem.authors       = ["Graham Paye"]
   gem.email         = ["paye@google.com"]
