@@ -1,5 +1,14 @@
 # Release History
 
+### 1.25.1 / 2021-02-09
+
+* Add rubocop 1.9 cops and disable a few others
+* Fix crash on extension checking, and eliminate new cop warning
+
+### 1.25.0 / 2021-01-27
+
+* pin rubocop version to 1.x, set min ruby to 2.5, enable new cops
+
 ### 1.24.0 / 2019-08-08
 
 * Set required ruby version to 2.4
