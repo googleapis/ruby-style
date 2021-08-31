@@ -1,5 +1,13 @@
 # Release History
 
+### [0.3.1](https://www.github.com/googleapis/ruby-style/compare/google-style/v0.3.0...google-style/v0.3.1) (2021-08-31)
+
+
+### Bug Fixes
+
+* Add rubocop 1.9 cops and disable a few others ([d79c611](https://www.github.com/googleapis/ruby-style/commit/d79c6117fd1dbe253500fcca473071aa4feb545b))
+* Fix crash on extension checking, and eliminate new cop warning ([5fd0d42](https://www.github.com/googleapis/ruby-style/commit/5fd0d420c460b9218154ddc956f63ff88b126ed4))
+
 ### 1.25.1 / 2021-02-09
 
 * Add rubocop 1.9 cops and disable a few others
