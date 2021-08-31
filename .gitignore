@@ -3,3 +3,5 @@
 .DS_Store
 *.gem
 Gemfile.lock
+/node_modules/
+/package-lock.json
