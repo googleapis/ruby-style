@@ -12,9 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+lib = File.expand_path "lib", __dir__
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
+require "google/style/version"
+
 Gem::Specification.new do |gem|
   gem.name          = "google-style"
-  gem.version       = "1.25.1"
+  gem.version       = Google::Style::VERSION
 
   gem.authors       = ["Graham Paye"]
   gem.email         = ["paye@google.com"]
@@ -24,7 +28,8 @@ Gem::Specification.new do |gem|
   gem.license       = "Apache-2.0"
 
   gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE",
-                       "README.md", "google-style.yml"]
+                       "README.md", "google-style.yml",
+                       "lib/google/style/version.rb"]
 
   gem.required_ruby_version = ">= 2.5.0"
 
