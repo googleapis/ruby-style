@@ -1,5 +1,9 @@
 # Release History
 
+### 1.25.2 (2021-09-23)
+
+* Disable Style/RedundantBegin
+
 ### 1.25.1 / 2021-02-09
 
 * Add rubocop 1.9 cops and disable a few others
