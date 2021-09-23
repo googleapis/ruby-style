@@ -1,11 +1,8 @@
 # Release History
 
-### [1.25.2](https://www.github.com/googleapis/ruby-style/compare/google-style/v1.25.1...google-style/v1.25.2) (2021-09-23)
+### 1.25.2 (2021-09-23)
 
-
-### Bug Fixes
-
-* Disable Style/RedundantBegin ([51e5460](https://www.github.com/googleapis/ruby-style/commit/51e54607d5ece999730d5b4498747c12a53489a7))
+* Disable Style/RedundantBegin
 
 ### 1.25.1 / 2021-02-09
 
