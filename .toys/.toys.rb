@@ -14,5 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-load_git remote: "https://github.com/googleapis/ruby-common-tools.git",
-         path: "toys/release"
+expand :clean, paths: :gitignore
+
+expand :rubocop, bundler: true
+
+tool "release" do
+  load_git remote: "https://github.com/googleapis/ruby-common-tools.git",
+           path: "toys/release"
+end
