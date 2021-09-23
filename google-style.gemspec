@@ -24,7 +24,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["paye@google.com"]
   gem.description   = "Shared style guide for Google's ruby projects"
   gem.summary       = "Collection of rubocop rules"
-  gem.homepage      = "https://github.com/googleapis/ruby-style/tree/master/"
+  gem.homepage      = "https://github.com/googleapis/ruby-style/"
   gem.license       = "Apache-2.0"
 
   gem.files         = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "LICENSE",
