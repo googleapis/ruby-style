@@ -207,6 +207,11 @@ Style/NilLambda:
 Style/RedundantArgument:
   Enabled: true
 
+# Disabled because we prefer to keep begin-end blocks in memoization for
+# readability (see https://github.com/rubocop/rubocop/pull/9602).
+Style/RedundantBegin:
+  Enabled: false
+
 # The idiom is useful in a variety of cases. We prefer to allow it.
 Style/RescueModifier:
   Enabled: false
