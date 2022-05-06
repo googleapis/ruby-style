@@ -20,8 +20,8 @@ Gem::Specification.new do |gem|
   gem.name          = "google-style"
   gem.version       = Google::Style::VERSION
 
-  gem.authors       = ["Graham Paye"]
-  gem.email         = ["paye@google.com"]
+  gem.authors       = ["Daniel Azuma", "Graham Paye"]
+  gem.email         = ["dazuma@google.com", "paye@google.com"]
   gem.description   = "Shared style guide for Google's ruby projects"
   gem.summary       = "Collection of rubocop rules"
   gem.homepage      = "https://github.com/googleapis/ruby-style/"
@@ -33,7 +33,8 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = ">= 2.5.0"
 
-  gem.add_dependency "rubocop", "~> 1.9"
+  # Pin rubocop to 1.28.x because 1.29 drops Ruby 2.5 compatibility
+  gem.add_dependency "rubocop", "~> 1.28.2"
   gem.add_development_dependency "bundler", "~> 2.0"
   gem.add_development_dependency "rake", "~> 12.3"
 end
