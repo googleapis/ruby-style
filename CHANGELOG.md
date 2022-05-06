@@ -1,5 +1,11 @@
 # Release History
 
+### 1.25.3 (2022-05-06)
+
+#### Bug Fixes
+
+* Pin rubocop to 1.28.x for Ruby 2.5 compatibility
+
 ### 1.25.2 (2021-09-23)
 
 * Disable Style/RedundantBegin
