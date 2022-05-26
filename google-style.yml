@@ -15,7 +15,19 @@
 AllCops:
   NewCops: disable
   SuggestExtensions: false
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
+
+# Added in Rubocop 1.10
+Gemspec/DateAssignment:
+  Enabled: true
+
+# Added in Rubocop 1.30
+Gemspec/DeprecatedAttributeAssignment:
+  Enabled: true
+
+# Disabled for now.
+Gemspec/RequireMFA:
+  Enabled: false
 
 # Enforcing a blank line often worsens vertical layout.
 Layout/EmptyLineAfterGuardClause:
@@ -30,6 +42,10 @@ Layout/EmptyLines:
 Layout/HashAlignment:
   Enabled: false
 
+# Added in Rubocop 1.18
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+
 # Our current preferred line length.
 Layout/LineLength:
   Max: 120
@@ -40,6 +56,14 @@ Layout/SpaceBeforeBrackets:
 
 # Added in Rubocop 1.7
 Lint/AmbiguousAssignment:
+  Enabled: true
+
+# Added in Rubocop 1.21
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+
+# Added in Rubocop 1.19
+Lint/AmbiguousRange:
   Enabled: true
 
 # Added in Rubocop 1.8
@@ -62,6 +86,14 @@ Lint/EmptyBlock:
 Lint/EmptyClass:
   Enabled: true
 
+# Added in Rubocop 1.16
+Lint/EmptyInPattern:
+  Enabled: true
+
+# Added in Rubocop 1.21
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: true
+
 # Added in Rubocop 1.8
 Lint/LambdaWithoutLiteralBlock:
   Enabled: true
@@ -80,6 +112,14 @@ Lint/OrAssignmentToConstant:
 
 # Added in Rubocop 1.8
 Lint/RedundantDirGlobSort:
+  Enabled: true
+
+# Added in Rubocop 1.27
+Lint/RefinementImportMethods:
+  Enabled: true
+
+# Added in Rubocop 1.22
+Lint/RequireRelativeSelfPath:
   Enabled: true
 
 # Added in Rubocop 1.9
@@ -102,6 +142,10 @@ Lint/UnexpectedBlockArity:
 Lint/UnmodifiedReduceAccumulator:
   Enabled: true
 
+# Added in Rubocop 1.23
+Lint/UselessRuby2Keywords:
+  Enabled: true
+
 Metrics/AbcSize:
   Max: 30
 
@@ -119,6 +163,10 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Max: 10
 
+# Added in Rubocop 1.24
+Naming/BlockForwarding:
+  Enabled: true
+
 # Does not allow distinguishing verbs (e.g. is vs has). Also causes problems
 # for generated code that might have generated method names.
 Naming/PredicateName:
@@ -128,6 +176,14 @@ Naming/PredicateName:
 # appear in generated code.
 Naming/VariableNumber:
   Enabled: false
+
+# Added in Rubocop 1.28
+Security/CompoundHash:
+  Enabled: true
+
+# Added in Rubocop 1.22
+Security/IoMethods:
+  Enabled: true
 
 # Better to separate accessors for yardoc and type declarations.
 Style/AccessorGrouping:
@@ -162,9 +218,29 @@ Style/EmptyMethod:
 Style/EndlessMethod:
   Enabled: true
 
+# Added in Rubocop 1.29
+Style/EnvHome:
+  Enabled: true
+
+# This check is overly paranoid.
+Style/FetchEnvVar:
+  Enabled: false
+
+# Added in Rubocop 1.24
+Style/FileRead:
+  Enabled: true
+
+# Added in Rubocop 1.24
+Style/FileWrite:
+  Enabled: true
+
 # Frozen string literals are no more as of Ruby 3.
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+# Added in Rubocop 1.10
+Style/HashConversion:
+  Enabled: true
 
 # Added in Rubocop 1.7
 Style/HashExcept:
@@ -177,6 +253,18 @@ Style/IfUnlessModifier:
 
 # Added in Rubocop 1.9
 Style/IfWithBooleanLiteralBranches:
+  Enabled: true
+
+# Added in Rubocop 1.16
+Style/InPatternThen:
+  Enabled: true
+
+# Added in Rubocop 1.30
+Style/MapCompactWithConditionalBlock:
+  Enabled: true
+
+# Added in Rubocop 1.24
+Style/MapToHash:
   Enabled: true
 
 # We adopt Seattle-style paren usage
@@ -195,12 +283,45 @@ Style/MethodDefParentheses:
 Style/ModuleFunction:
   Enabled: false
 
+# Added in Rubocop 1.16
+Style/MultilineInPatternThen:
+  Enabled: true
+
 # Added in Rubocop 1.2
 Style/NegatedIfElseCondition:
   Enabled: true
 
+# Added in Rubocop 1.26
+Style/NestedFileDirname:
+  Enabled: true
+
 # Added in Rubocop 1.3
 Style/NilLambda:
+  Enabled: true
+
+# Added in Rubocop 1.22
+Style/NumberedParameters:
+  Enabled: true
+
+# Added in Rubocop 1.22
+Style/NumberedParametersLimit:
+  Enabled: true
+
+# Added in Rubocop 1.28
+Style/ObjectThen:
+  Enabled: true
+
+# Disabled for tests but left enabled for production code.
+# Added in Rubocop 1.23
+Style/OpenStructUse:
+  Enabled: true
+  Exclude:
+    - "test/**/*.rb"
+    - "acceptance/**/*.rb"
+    - "samples/acceptance/**/*.rb"
+
+# Added in Rubocop 1.16
+Style/QuotedSymbols:
   Enabled: true
 
 # Added in Rubocop 1.4
@@ -212,9 +333,25 @@ Style/RedundantArgument:
 Style/RedundantBegin:
   Enabled: false
 
+# Added in Rubocop 1.27
+Style/RedundantInitialize:
+  Enabled: true
+
+# Added in Rubocop 1.19
+Style/RedundantSelfAssignmentBranch:
+  Enabled: true
+
 # The idiom is useful in a variety of cases. We prefer to allow it.
 Style/RescueModifier:
   Enabled: false
+
+# We disagree with this one. Grep is more specialized than select/reject
+Style/SelectByRegexp:
+  Enabled: false
+
+# Added in Rubocop 1.12
+Style/StringChars:
+  Enabled: true
 
 # We prefer standardizing on double-quoted strings for readability.
 Style/StringLiterals:

@@ -31,10 +31,7 @@ Gem::Specification.new do |gem|
                        "README.md", "google-style.yml",
                        "lib/google/style/version.rb"]
 
-  gem.required_ruby_version = ">= 2.5.0"
+  gem.required_ruby_version = ">= 2.6.0"
 
-  # Pin rubocop to 1.28.x because 1.29 drops Ruby 2.5 compatibility
-  gem.add_dependency "rubocop", "~> 1.28.2"
-  gem.add_development_dependency "bundler", "~> 2.0"
-  gem.add_development_dependency "rake", "~> 12.3"
+  gem.add_dependency "rubocop", "~> 1.30"
 end
