@@ -1,5 +1,11 @@
 # Release History
 
+### 1.26.0 (2022-05-27)
+
+#### Features
+
+* Require Ruby 2.6 and support new checks as of Rubocop 1.30
+
 ### 1.25.3 (2022-05-06)
 
 #### Bug Fixes
