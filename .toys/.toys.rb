@@ -18,6 +18,8 @@ expand :clean, paths: :gitignore
 
 expand :rubocop, bundler: true
 
+expand :gem_build
+
 tool "release" do
   load_git remote: "https://github.com/googleapis/ruby-common-tools.git",
            path: "toys/release"
