@@ -1,5 +1,11 @@
 # Release History
 
+### 1.26.1 (2022-06-27)
+
+#### Bug Fixes
+
+* Updates for Rubocop 1.31 ([#54](https://github.com/googleapis/ruby-style/issues/54)) 
+
 ### 1.26.0 (2022-05-27)
 
 #### Features
