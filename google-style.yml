@@ -17,10 +17,6 @@ AllCops:
   SuggestExtensions: false
   TargetRubyVersion: 2.6
 
-# Added in Rubocop 1.10
-Gemspec/DateAssignment:
-  Enabled: true
-
 # Added in Rubocop 1.30
 Gemspec/DeprecatedAttributeAssignment:
   Enabled: true
@@ -41,6 +37,14 @@ Layout/EmptyLines:
 # our code adheres to the "table" style, but we do not want to enforce it.
 Layout/HashAlignment:
   Enabled: false
+
+# Added in Rubocop 1.31
+Layout/LineContinuationLeadingSpace:
+  Enabled: true
+
+# Added in Rubocop 1.31
+Layout/LineContinuationSpacing:
+  Enabled: true
 
 # Added in Rubocop 1.18
 Layout/LineEndStringConcatenationIndentation:
@@ -64,6 +68,10 @@ Lint/AmbiguousOperatorPrecedence:
 
 # Added in Rubocop 1.19
 Lint/AmbiguousRange:
+  Enabled: true
+
+# Added in Rubocop 1.31
+Lint/ConstantOverwrittenInRescue:
   Enabled: true
 
 # Added in Rubocop 1.8
@@ -100,6 +108,10 @@ Lint/LambdaWithoutLiteralBlock:
 
 # Added in Rubocop 1.2
 Lint/NoReturnInBeginEndBlocks:
+  Enabled: true
+
+# Added in Rubocop 1.31
+Lint/NonAtomicFileOperation:
   Enabled: true
 
 # Added in Rubocop 1.9
