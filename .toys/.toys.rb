@@ -21,6 +21,12 @@ expand :rubocop, bundler: true
 expand :gem_build
 
 tool "release" do
-  load_git remote: "https://github.com/googleapis/ruby-common-tools.git",
-           path: "toys/release"
+  if ENV["RUBY_COMMON_TOOLS"]
+    common_tools_dir = File.expand_path ENV["RUBY_COMMON_TOOLS"]
+    load File.join(common_tools_dir, "toys", "release")
+  else
+    load_git remote: "https://github.com/googleapis/ruby-common-tools.git",
+             path: "toys/release",
+             update: true
+  end
 end
