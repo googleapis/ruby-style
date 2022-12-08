@@ -1,5 +1,11 @@
 # Release History
 
+### 1.26.2 (2022-12-08)
+
+#### Bug Fixes
+
+* Disable Style/RegexpLiteral ([#58](https://github.com/googleapis/ruby-style/issues/58)) 
+
 ### 1.26.1 (2022-06-27)
 
 #### Bug Fixes
