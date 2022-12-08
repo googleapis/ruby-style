@@ -353,11 +353,16 @@ Style/RedundantInitialize:
 Style/RedundantSelfAssignmentBranch:
   Enabled: true
 
+# Disabled because we find it to be pedantic. The enforced rules are too simple
+# to capture readability, and are especially problematic for generated code.
+Style/RegexpLiteral:
+  Enabled: false
+
 # The idiom is useful in a variety of cases. We prefer to allow it.
 Style/RescueModifier:
   Enabled: false
 
-# We disagree with this one. Grep is more specialized than select/reject
+# We disagree with this one. Grep is more specialized than select/reject.
 Style/SelectByRegexp:
   Enabled: false
 
