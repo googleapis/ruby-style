@@ -1,5 +1,11 @@
 # Release History
 
+### 1.26.3 (2023-02-09)
+
+#### Bug Fixes
+
+* Disable Lint/Debugger for samples ([#60](https://github.com/googleapis/ruby-style/issues/60)) 
+
 ### 1.26.2 (2022-12-08)
 
 #### Bug Fixes
