@@ -74,6 +74,12 @@ Lint/AmbiguousRange:
 Lint/ConstantOverwrittenInRescue:
   Enabled: true
 
+# Samples often use Kernel#p which Lint/Debugger doesn't like.
+Lint/Debugger:
+  Exclude:
+    - "samples/**/*.rb"
+    - "snippets/**/*.rb"
+
 # Added in Rubocop 1.8
 Lint/DeprecatedConstants:
   Enabled: true
