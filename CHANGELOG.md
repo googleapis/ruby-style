@@ -1,5 +1,11 @@
 # Release History
 
+### 1.27.0 (2023-09-13)
+
+#### Features
+
+* Require Ruby 2.7 and support new checks as of Rubocop 1.56 ([#64](https://github.com/googleapis/ruby-style/issues/64)) 
+
 ### 1.26.3 (2023-02-09)
 
 #### Bug Fixes
