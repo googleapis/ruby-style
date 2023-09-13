@@ -15,10 +15,14 @@
 AllCops:
   NewCops: disable
   SuggestExtensions: false
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
 
 # Added in Rubocop 1.30
 Gemspec/DeprecatedAttributeAssignment:
+  Enabled: true
+
+# Added in Rubocop 1.44
+Gemspec/DevelopmentDependencies:
   Enabled: true
 
 # Disabled for now.
@@ -88,6 +92,14 @@ Lint/DeprecatedConstants:
 Lint/DuplicateBranch:
   Enabled: true
 
+# Added in Rubocop 1.37
+Lint/DuplicateMagicComment:
+  Enabled: true
+
+# Added in Rubocop 1.50
+Lint/DuplicateMatchPattern:
+  Enabled: true
+
 # Added in Rubocop 1.1
 Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
@@ -112,6 +124,10 @@ Lint/IncompatibleIoSelectWithFiberScheduler:
 Lint/LambdaWithoutLiteralBlock:
   Enabled: true
 
+# Added in Rubocop 1.53
+Lint/MixedCaseRange:
+  Enabled: true
+
 # Added in Rubocop 1.2
 Lint/NoReturnInBeginEndBlocks:
   Enabled: true
@@ -132,8 +148,16 @@ Lint/OrAssignmentToConstant:
 Lint/RedundantDirGlobSort:
   Enabled: true
 
+# Added in Rubocop 1.53
+Lint/RedundantRegexpQuantifiers:
+  Enabled: true
+
 # Added in Rubocop 1.27
 Lint/RefinementImportMethods:
+  Enabled: true
+
+# Added in Rubocop 1.32
+Lint/RequireRangeParentheses:
   Enabled: true
 
 # Added in Rubocop 1.22
@@ -160,12 +184,20 @@ Lint/UnexpectedBlockArity:
 Lint/UnmodifiedReduceAccumulator:
   Enabled: true
 
+# Added in Rubocop 1.43
+Lint/UselessRescue:
+  Enabled: true
+
 # Added in Rubocop 1.23
 Lint/UselessRuby2Keywords:
   Enabled: true
 
 Metrics/AbcSize:
   Max: 30
+
+# Could be problematic for generated code, and overall not very useful.
+Metrics/CollectionLiteralLength:
+  Enabled: false
 
 Metrics/CyclomaticComplexity:
   Max: 10
@@ -224,8 +256,24 @@ Style/CaseEquality:
 Style/CollectionCompact:
   Enabled: true
 
+# Added in Rubocop 1.44
+Style/ComparableClamp:
+  Enabled: true
+
+# Added in Rubocop 1.41
+Style/ConcatArrayLiterals:
+  Enabled: true
+
+# Added in Rubocop 1.48
+Style/DirEmpty:
+  Enabled: true
+
 # Added in Rubocop 1.1
 Style/DocumentDynamicEvalDefinition:
+  Enabled: true
+
+# Added in Rubocop 1.32
+Style/EmptyHeredoc:
   Enabled: true
 
 # We prefer consistent method indentation.
@@ -240,9 +288,17 @@ Style/EndlessMethod:
 Style/EnvHome:
   Enabled: true
 
+# Added in Rubocop 1.51
+Style/ExactRegexpMatch:
+  Enabled: true
+
 # This check is overly paranoid.
 Style/FetchEnvVar:
   Enabled: false
+
+# Added in Rubocop 1.48
+Style/FileEmpty:
+  Enabled: true
 
 # Added in Rubocop 1.24
 Style/FileRead:
@@ -277,12 +333,20 @@ Style/IfWithBooleanLiteralBranches:
 Style/InPatternThen:
   Enabled: true
 
+# Added in Rubocop 1.35
+Style/MagicCommentFormat:
+  Enabled: true
+
 # Added in Rubocop 1.30
 Style/MapCompactWithConditionalBlock:
   Enabled: true
 
 # Added in Rubocop 1.24
 Style/MapToHash:
+  Enabled: true
+
+# Added in Rubocop 1.42
+Style/MapToSet:
   Enabled: true
 
 # We adopt Seattle-style paren usage
@@ -297,6 +361,11 @@ Style/MethodCallWithArgsParentheses:
 Style/MethodDefParentheses:
   EnforcedStyle: require_no_parentheses
 
+# I (dazuma@) am not a fan of this rule. It's a bit more readable but at the
+# cost of being logically clever.
+Style/MinMaxComparison:
+  Enabled: false
+
 # Enable use of the different semantics of module_function and extend self.
 Style/ModuleFunction:
   Enabled: false
@@ -304,6 +373,11 @@ Style/ModuleFunction:
 # Added in Rubocop 1.16
 Style/MultilineInPatternThen:
   Enabled: true
+
+# I (dazuma@) am not a fan of this rule. Its readability benefit is debatable
+# and it carries the cost of being logically clever.
+Style/MultipleComparison:
+  Enabled: false
 
 # Added in Rubocop 1.2
 Style/NegatedIfElseCondition:
@@ -338,6 +412,11 @@ Style/OpenStructUse:
     - "acceptance/**/*.rb"
     - "samples/acceptance/**/*.rb"
 
+# Added in Rubocop 1.37. Open to disabling this if it causes problems for
+# metaprogramming-heavy code.
+Style/OperatorMethodCall:
+  Enabled: true
+
 # Added in Rubocop 1.16
 Style/QuotedSymbols:
   Enabled: true
@@ -346,17 +425,62 @@ Style/QuotedSymbols:
 Style/RedundantArgument:
   Enabled: true
 
+# Added in Rubocop 1.52
+Style/RedundantArrayConstructor:
+  Enabled: true
+
 # Disabled because we prefer to keep begin-end blocks in memoization for
 # readability (see https://github.com/rubocop/rubocop/pull/9602).
 Style/RedundantBegin:
   Enabled: false
 
+# Disabled because we believe it's good practice to be explicit about constant
+# namespaces, given how confusing constant lookup rules are in Ruby.
+Style/RedundantConstantBase:
+  Enabled: false
+
+# Added in Rubocop 1.53
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: true
+
+# Added in Rubocop 1.41
+Style/RedundantDoubleSplatHashBraces:
+  Enabled: true
+
+# Added in Rubocop 1.38
+Style/RedundantEach:
+  Enabled: true
+
+# Added in Rubocop 1.52
+Style/RedundantFilterChain:
+  Enabled: true
+
+# Added in Rubocop 1.45
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: true
+
 # Added in Rubocop 1.27
 Style/RedundantInitialize:
   Enabled: true
 
+# Added in Rubocop 1.49
+Style/RedundantLineContinuation:
+  Enabled: true
+
+# Added in Rubocop 1.53
+Style/RedundantRegexpArgument:
+  Enabled: true
+
+# Added in Rubocop 1.52
+Style/RedundantRegexpConstructor:
+  Enabled: true
+
 # Added in Rubocop 1.19
 Style/RedundantSelfAssignmentBranch:
+  Enabled: true
+
+# Added in Rubocop 1.37
+Style/RedundantStringEscape:
   Enabled: true
 
 # Disabled because we find it to be pedantic. The enforced rules are too simple
@@ -367,6 +491,10 @@ Style/RegexpLiteral:
 # The idiom is useful in a variety of cases. We prefer to allow it.
 Style/RescueModifier:
   Enabled: false
+
+# Added in Rubocop 1.53. Open to disabling, since there may be exceptions.
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
 
 # We disagree with this one. Grep is more specialized than select/reject.
 Style/SelectByRegexp:
@@ -395,3 +523,7 @@ Style/TrivialAccessors:
 # We prefer traditional bracket style for all arrays.
 Style/WordArray:
   EnforcedStyle: brackets
+
+# Added in Rubocop 1.53
+Style/YAMLFileRead:
+  Enabled: true
