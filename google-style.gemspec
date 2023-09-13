@@ -31,7 +31,7 @@ Gem::Specification.new do |gem|
                        "README.md", "google-style.yml",
                        "lib/google/style/version.rb"]
 
-  gem.required_ruby_version = ">= 2.6.0"
+  gem.required_ruby_version = ">= 2.7.0"
 
-  gem.add_dependency "rubocop", "~> 1.31"
+  gem.add_dependency "rubocop", "~> 1.56"
 end
