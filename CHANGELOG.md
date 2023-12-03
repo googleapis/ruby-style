@@ -1,5 +1,11 @@
 # Release History
 
+### 1.26.4 (2023-12-03)
+
+#### Bug Fixes
+
+* Pin rubocop to 1.57.x to avoid 1.58 changes to parentheses rules.
+
 ### 1.26.3 (2023-02-09)
 
 #### Bug Fixes
