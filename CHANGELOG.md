@@ -1,5 +1,11 @@
 # Release History
 
+### 1.27.1 (2024-01-20)
+
+#### Bug Fixes
+
+* Disable anonymous argument forwarding requirement ([#71](https://github.com/googleapis/ruby-style/issues/71)) 
+
 ### 1.27.0 (2023-09-13)
 
 #### Features
