@@ -242,6 +242,10 @@ Style/AccessorGrouping:
 # Added in Rubocop 1.1
 Style/ArgumentsForwarding:
   Enabled: true
+  RedundantBlockArgumentNames: [] # To support Ruby < 3.2
+  RedundantKeywordRestArgumentNames: [] # To support Ruby < 3.2
+  RedundantRestArgumentNames: [] # To support Ruby < 3.2
+  UseAnonymousForwarding: false # To support Ruby < 3.2
 
 # Problematic for generated code which might include unicode in comments.
 Style/AsciiComments:
