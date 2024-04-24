@@ -15,7 +15,7 @@
 AllCops:
   NewCops: disable
   SuggestExtensions: false
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
 
 # Added in Rubocop 1.30
 Gemspec/DeprecatedAttributeAssignment:
@@ -120,8 +120,16 @@ Lint/EmptyInPattern:
 Lint/IncompatibleIoSelectWithFiberScheduler:
   Enabled: true
 
+# Added in Rubocop 1.59
+Lint/ItWithoutArgumentsInBlock:
+  Enabled: true
+
 # Added in Rubocop 1.8
 Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
+# Added in Rubocop 1.58
+Lint/LiteralAssignmentInCondition:
   Enabled: true
 
 # Added in Rubocop 1.53
@@ -345,6 +353,10 @@ Style/MagicCommentFormat:
 Style/MapCompactWithConditionalBlock:
   Enabled: true
 
+# Added in Rubocop 1.63
+Style/MapIntoArray:
+  Enabled: true
+
 # Added in Rubocop 1.24
 Style/MapToHash:
   Enabled: true
@@ -504,6 +516,10 @@ Style/ReturnNilInPredicateMethodDefinition:
 Style/SelectByRegexp:
   Enabled: false
 
+# Added in Rubocop 1.57
+Style/SingleLineDoEndBlock:
+  Enabled: true
+
 # Added in Rubocop 1.12
 Style/StringChars:
   Enabled: true
@@ -511,6 +527,10 @@ Style/StringChars:
 # We prefer standardizing on double-quoted strings for readability.
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+# We prefer omitting parentheses where possible.
+Style/SuperWithArgsParentheses:
+  Enabled: false
 
 # Added in Rubocop 1.1
 Style/SwapValues:
