@@ -172,6 +172,10 @@ Lint/RequireRangeParentheses:
 Lint/RequireRelativeSelfPath:
   Enabled: true
 
+# Could be problematic for code refactoring, and overall not very useful.
+Lint/SafeNavigationConsistency:
+  Enabled: false
+
 # Added in Rubocop 1.9
 Lint/SymbolConversion:
   Enabled: true
