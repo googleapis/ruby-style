@@ -1,5 +1,11 @@
 # Release History
 
+### 1.30.1 (2024-10-25)
+
+#### Bug Fixes
+
+* Disable SafeNavigationConsistency lint ([#79](https://github.com/googleapis/ruby-style/issues/79)) 
+
 ### 1.30.0 (2024-04-24)
 
 #### Features
