@@ -15,7 +15,10 @@
 AllCops:
   NewCops: disable
   SuggestExtensions: false
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.1
+
+Gemspec/AddRuntimeDependency: # new in 1.65                                                                 
+  Enabled: true      
 
 # Added in Rubocop 1.30
 Gemspec/DeprecatedAttributeAssignment:
@@ -62,6 +65,9 @@ Layout/LineLength:
 Layout/SpaceBeforeBrackets:
   Enabled: true
 
+Lint/ArrayLiteralInRegexp: # new in 1.71                                                                    
+  Enabled: true
+
 # Added in Rubocop 1.7
 Lint/AmbiguousAssignment:
   Enabled: true
@@ -76,6 +82,12 @@ Lint/AmbiguousRange:
 
 # Added in Rubocop 1.31
 Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
+Lint/ConstantReassignment: # new in 1.70                                                                    
+  Enabled: true
+
+Lint/CopDirectiveSyntax: # new in 1.72                                                                      
   Enabled: true
 
 # Samples often use Kernel#p which Lint/Debugger doesn't like.
@@ -104,6 +116,9 @@ Lint/DuplicateMatchPattern:
 Lint/DuplicateRegexpCharacterClassElement:
   Enabled: true
 
+Lint/DuplicateSetElement: # new in 1.67                                                                     
+  Enabled: true
+
 # Added in Rubocop 1.1
 Lint/EmptyBlock:
   Enabled: true
@@ -114,6 +129,9 @@ Lint/EmptyClass:
 
 # Added in Rubocop 1.16
 Lint/EmptyInPattern:
+  Enabled: true
+
+Lint/HashNewWithKeywordArgumentsAsDefault: # new in 1.69
   Enabled: true
 
 # Added in Rubocop 1.21
@@ -148,6 +166,10 @@ Lint/NonAtomicFileOperation:
 Lint/NumberedParameterAssignment:
   Enabled: true
 
+# Can easily appear in the generated code
+Lint/NumericOperationWithConstantResult: # new in 1.69
+  Enabled: false
+
 # Added in Rubocop 1.9
 Lint/OrAssignmentToConstant:
   Enabled: true
@@ -159,6 +181,10 @@ Lint/RedundantDirGlobSort:
 # Added in Rubocop 1.53
 Lint/RedundantRegexpQuantifiers:
   Enabled: true
+
+# Can easily appear in the generated code
+Lint/RedundantTypeConversion: # new in 1.72
+  Enabled: false
 
 # Added in Rubocop 1.27
 Lint/RefinementImportMethods:
@@ -176,6 +202,12 @@ Lint/RequireRelativeSelfPath:
 Lint/SafeNavigationConsistency:
   Enabled: false
 
+Lint/SharedMutableDefault: # new in 1.70
+  Enabled: true
+
+Lint/SuppressedExceptionInNumberConversion: # new in 1.72
+  Enabled: true
+
 # Added in Rubocop 1.9
 Lint/SymbolConversion:
   Enabled: true
@@ -192,9 +224,22 @@ Lint/TripleQuotes:
 Lint/UnexpectedBlockArity:
   Enabled: true
 
+Lint/UnescapedBracketInRegexp: # new in 1.68                                                                
+  Enabled: true 
+
 # Added in Rubocop 1.1
 Lint/UnmodifiedReduceAccumulator:
   Enabled: true
+
+Lint/UselessConstantScoping: # new in 1.72                                                                  
+  Enabled: true
+
+Lint/UselessDefined: # new in 1.69
+  Enabled: true
+
+# Can easily appear in the generated code
+Lint/UselessNumericOperation: # new in 1.66
+  Enabled: false
 
 # Added in Rubocop 1.43
 Lint/UselessRescue:
@@ -251,6 +296,9 @@ Security/IoMethods:
 Style/AccessorGrouping:
   EnforcedStyle: separated
 
+Style/AmbiguousEndlessMethodDefinition: # new in 1.68
+  Enabled: true
+
 # Added in Rubocop 1.1
 Style/ArgumentsForwarding:
   Enabled: true
@@ -258,6 +306,9 @@ Style/ArgumentsForwarding:
   RedundantKeywordRestArgumentNames: [] # To support Ruby < 3.2
   RedundantRestArgumentNames: [] # To support Ruby < 3.2
   UseAnonymousForwarding: false # To support Ruby < 3.2
+
+Style/ArrayIntersect: # new in 1.40
+  Enabled: true
 
 # Problematic for generated code which might include unicode in comments.
 Style/AsciiComments:
@@ -272,12 +323,18 @@ Style/CaseEquality:
 Style/CollectionCompact:
   Enabled: true
 
+Style/CombinableDefined: # new in 1.68
+  Enabled: true
+
 # Added in Rubocop 1.44
 Style/ComparableClamp:
   Enabled: true
 
 # Added in Rubocop 1.41
 Style/ConcatArrayLiterals:
+  Enabled: true
+
+Style/DigChain: # new in 1.69
   Enabled: true
 
 # Added in Rubocop 1.48
@@ -336,6 +393,9 @@ Style/HashConversion:
 Style/HashExcept:
   Enabled: true
 
+Style/HashFetchChain: # new in 1.75
+  Enabled: true
+
 # It is sometimes preferable to use the non-modifier form even for single-line
 # expressions, for readability.
 Style/IfUnlessModifier:
@@ -347,6 +407,12 @@ Style/IfWithBooleanLiteralBranches:
 
 # Added in Rubocop 1.16
 Style/InPatternThen:
+  Enabled: true
+
+Style/ItAssignment: # new in 1.70
+  Enabled: true
+
+Style/ItBlockParameter: # new in 1.75
   Enabled: true
 
 # Added in Rubocop 1.35
@@ -515,6 +581,10 @@ Style/RescueModifier:
 # Added in Rubocop 1.53. Open to disabling, since there may be exceptions.
 Style/ReturnNilInPredicateMethodDefinition:
   Enabled: true
+
+# Disabled since length of navigation chain is not a problem.
+Style/SafeNavigationChainLength: # new in 1.68
+  Enabled: false
 
 # We disagree with this one. Grep is more specialized than select/reject.
 Style/SelectByRegexp:
