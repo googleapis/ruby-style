@@ -582,6 +582,7 @@ Style/RescueModifier:
 Style/ReturnNilInPredicateMethodDefinition:
   Enabled: true
 
+# Disabled since length of navigation chain is not a problem.
 Style/SafeNavigationChainLength: # new in 1.68
   Enabled: false
 
