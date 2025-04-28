@@ -16,6 +16,6 @@
 
 module Google
   module Style
-    VERSION = "1.30.1"
+    VERSION = "1.31.0"
   end
 end

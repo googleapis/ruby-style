@@ -1,5 +1,11 @@
 # Release History
 
+### 1.31.0 (2025-04-28)
+
+#### Features
+
+* update ruby version, audit some cops ([#88](https://github.com/googleapis/ruby-style/issues/88)) 
+
 ### 1.30.1 (2024-10-25)
 
 #### Bug Fixes
