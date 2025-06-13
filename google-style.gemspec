@@ -33,5 +33,5 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = ">= 3.1.0"
 
-  gem.add_dependency "rubocop", "~> 1.75"
+  gem.add_dependency "rubocop", "~> 1.76"
 end
