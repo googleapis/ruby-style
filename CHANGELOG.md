@@ -1,5 +1,11 @@
 # Release History
 
+### 1.31.1 (2025-06-13)
+
+#### Bug Fixes
+
+* rename cop to eliminate extra warnings ([#90](https://github.com/googleapis/ruby-style/issues/90)) 
+
 ### 1.31.0 (2025-04-28)
 
 #### Features
