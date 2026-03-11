@@ -1,5 +1,11 @@
 # Release History
 
+### 1.32.0 (2026-03-10)
+
+#### Features
+
+* Update TargetRubyVersion to 3.2 ([#98](https://github.com/googleapis/ruby-style/issues/98)) 
+
 ### 1.31.1 (2025-06-13)
 
 #### Bug Fixes
