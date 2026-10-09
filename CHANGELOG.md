@@ -1,5 +1,11 @@
 # Release History
 
+### 1.32.1 (2026-10-09)
+
+#### Documentation
+
+* trigger a release to verify the new publishing pipeline ([#106](https://github.com/googleapis/ruby-style/issues/106)) 
+
 ### 1.32.0 (2026-03-10)
 
 #### Features
