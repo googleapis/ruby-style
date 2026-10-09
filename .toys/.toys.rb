@@ -14,12 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-expand :clean, paths: :gitignore
-
-expand :rubocop, bundler: true
-
-expand :gem_build
-
 tool "release" do
   if ENV["RUBY_COMMON_TOOLS"]
     common_tools_dir = File.expand_path ENV["RUBY_COMMON_TOOLS"]
