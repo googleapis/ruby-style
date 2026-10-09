@@ -33,7 +33,7 @@ jobs:
       with:
         persist-credentials: false
     - name: Install Ruby ${{ matrix.ruby }}
-      uses: ruby/setup-ruby@d45b1a4e94b71acab930e56e79c6aa188764e7f9 # v1.316.0
+      uses: ruby/setup-ruby@e81a8fa391b11a595c1b7ed84177cc0fe02faf83 # v1.328.0
       with:
         ruby-version: "${{ matrix.ruby }}"
     - name: Install tools
