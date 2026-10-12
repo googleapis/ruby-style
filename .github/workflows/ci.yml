@@ -38,7 +38,7 @@ jobs:
         ruby-version: "${{ matrix.ruby }}"
     - name: Install tools
       shell: bash
-      run: "bundle install && gem install --no-document toys"
+      run: "bundle install && gem install --no-document toys -v '~> 0.22.0'"
     - name: Test
       shell: bash
       run: toys rubocop < /dev/null
